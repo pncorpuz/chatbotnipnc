@@ -10,7 +10,7 @@
 	
 	if(isset($_REQUEST['hub_challenge'])){
 		$challenge = $_REQUEST['hub_challenge'];
-		$token = $_REQUEST['hub_verify+token'];
+		$token = $_REQUEST['hub_verify_token'];
 	}
 	
 	if($token == "myCustomToken123"){
@@ -19,16 +19,6 @@
 	}
 	
 	?>
-	<table>
-		<tr>
-			<td style='width: 30%;'>
-				<img class = 'newappIcon' src='images/newapp-icon.png'>
-			</td>
-			<td>
-				<h1 id = "message"><?php echo "Hello World!"; ?></h1>
-				<p class='description'></p> Thanks for creating a <span class="blue">PHP Starter Application</span>.
-			</td>
-		</tr>
-	</table>
+	
 </body>
 </html>
