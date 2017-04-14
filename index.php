@@ -6,6 +6,19 @@
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
+	<?php
+	
+	if(isset($_REQUEST['hub_challenge'])){
+		$challenge = $_REQUEST['hub_challenge'];
+		$token = $_REQUEST['hub_verify+token'];
+	}
+	
+	if($token == "myCustomToken123"){
+		echo $challenge;
+		
+	}
+	
+	?>
 	<table>
 		<tr>
 			<td style='width: 30%;'>
