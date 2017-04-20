@@ -1,3 +1,4 @@
+<html>
 <?php
 
 $challenge = $_REQUEST['hub_challenge'];
@@ -8,3 +9,5 @@ echo $challenge;
 }
 
 ?>
+
+</html>
